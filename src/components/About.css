@@ -1,0 +1,61 @@
+.about-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: start;
+}
+
+.about-text {
+  display: grid;
+  gap: 1.15rem;
+  font-size: 1.05rem;
+  color: var(--text-muted);
+}
+
+.about-text p:first-child {
+  color: var(--text);
+}
+
+.about-focus {
+  padding: 1.6rem 1.75rem;
+}
+
+.about-focus-title {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin-bottom: 0.75rem;
+}
+
+.about-focus-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.about-focus-list li {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.95rem;
+}
+
+.about-focus-list li:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.about-index {
+  font-size: 0.72rem;
+  color: var(--accent);
+}
+
+@media (max-width: 860px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
